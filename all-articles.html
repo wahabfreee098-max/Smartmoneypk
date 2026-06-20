@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Articles — SmartMoney PK</title>
+<meta name="description" content="Browse all SmartMoney PK articles on saving, investing, side income, and banking in Pakistan.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #185FA5; --blue-dark: #0C447C; --blue-light: #E6F1FB;
+    --green: #3B6D11; --green-light: #EAF3DE;
+    --amber: #854F0B; --amber-light: #FAEEDA;
+    --teal: #0F6E56; --teal-light: #E1F5EE;
+    --text: #1a1a1a; --text-muted: #6b6b6b;
+    --border: #e8e8e8; --bg: #f8f8f6; --white: #ffffff;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); background: var(--bg); font-size: 16px; line-height: 1.7; }
+  a { text-decoration: none; color: inherit; }
+
+  nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+  .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--blue); }
+  .back-link { font-size: 14px; color: var(--text-muted); }
+
+  .page-hero { background: linear-gradient(135deg, #0C447C 0%, #185FA5 60%); padding: 48px 24px; text-align: center; }
+  .page-hero h1 { font-size: clamp(26px, 4vw, 38px); font-weight: 800; color: white; margin-bottom: 10px; }
+  .page-hero p { font-size: 15px; color: rgba(255,255,255,0.8); }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+
+  .filter-bar { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
+  .filter-btn { background: var(--white); border: 1.5px solid var(--border); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; color: var(--text-muted); }
+  .filter-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+  .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin: 32px 0 14px; display: flex; align-items: center; gap: 10px; }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  .section-title.saving { color: var(--green); }
+  .section-title.investing { color: var(--blue); }
+  .section-title.income { color: var(--amber); }
+  .section-title.banking { color: var(--teal); }
+
+  .article-row { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 16px; transition: box-shadow 0.15s, transform 0.15s; }
+  .article-row:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.07); transform: translateY(-1px); }
+  .row-icon { font-size: 26px; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .row-icon.saving { background: var(--green-light); }
+  .row-icon.investing { background: var(--blue-light); }
+  .row-icon.income { background: var(--amber-light); }
+  .row-icon.banking { background: var(--teal-light); }
+  .row-content { flex: 1; }
+  .row-content h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; line-height: 1.4; }
+  .row-content p { font-size: 13px; color: var(--text-muted); }
+  .row-meta { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+  .row-arrow { color: var(--blue); font-weight: 700; font-size: 16px; }
+
+  .stats-bar { display: flex; gap: 24px; justify-content: center; margin-bottom: 32px; flex-wrap: wrap; padding: 20px; background: var(--white); border-radius: 12px; border: 1px solid var(--border); }
+  .stat { text-align: center; }
+  .stat .num { font-size: 22px; font-weight: 800; color: var(--blue); }
+  .stat .label { font-size: 12px; color: var(--text-muted); }
+
+  footer { background: #0a2540; color: rgba(255,255,255,0.6); text-align: center; padding: 24px; font-size: 13px; }
+  footer a { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 600px) {
+    .article-row { flex-wrap: wrap; }
+    .row-meta { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">₨ SmartMoney PK</div>
+    <a href="index.html" class="back-link">← Back to home</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>All Articles</h1>
+  <p>15 practical guides on saving, investing, side income, and banking in Pakistan</p>
+</div>
+
+<div class="container">
+
+  <div class="stats-bar">
+    <div class="stat"><div class="num">15</div><div class="label">Articles</div></div>
+    <div class="stat"><div class="num">4</div><div class="label">Categories</div></div>
+    <div class="stat"><div class="num">100%</div><div class="label">Free to read</div></div>
+  </div>
+
+  <div class="section-title saving">💰 Saving Tips</div>
+
+  <a class="article-row" href="01-save-10000-per-month.html">
+    <div class="row-icon saving">💰</div>
+    <div class="row-content"><h3>10 ways to save Rs 10,000 every month without feeling broke</h3><p>Practical, no-fluff tips that actually work for Pakistani families.</p></div>
+    <div class="row-meta">⏱ 5 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="02-cut-grocery-bill-30-percent.html">
+    <div class="row-icon saving">🛒</div>
+    <div class="row-content"><h3>How to cut your grocery bill by 30% without eating less</h3><p>Smart shopping tactics that work at any market in Pakistan.</p></div>
+    <div class="row-meta">⏱ 6 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="03-emergency-fund-guide-pakistan.html">
+    <div class="row-icon saving">🐷</div>
+    <div class="row-content"><h3>How to build an emergency fund in Pakistan</h3><p>A step-by-step plan, starting with whatever you can afford.</p></div>
+    <div class="row-meta">⏱ 7 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="13-income-tax-filing-pakistan-guide.html">
+    <div class="row-icon saving">🧾</div>
+    <div class="row-content"><h3>How to file income tax in Pakistan — a simple guide</h3><p>Understanding your tax obligations and how to file without stress.</p></div>
+    <div class="row-meta">⏱ 7 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="14-budgeting-50-30-20-pakistan.html">
+    <div class="row-icon saving">📋</div>
+    <div class="row-content"><h3>The 50/30/20 budgeting rule, for Pakistani salaries</h3><p>A simple framework to organise your income without spreadsheets.</p></div>
+    <div class="row-meta">⏱ 5 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="15-pay-off-debt-fast-pakistan.html">
+    <div class="row-icon saving">💳</div>
+    <div class="row-content"><h3>How to pay off debt faster in Pakistan</h3><p>The snowball and avalanche methods, explained simply.</p></div>
+    <div class="row-meta">⏱ 6 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+
+  <div class="section-title investing">📈 Investing</div>
+
+  <a class="article-row" href="04-psx-beginners-guide.html">
+    <div class="row-icon investing">📊</div>
+    <div class="row-content"><h3>Beginner's guide to the Pakistan Stock Exchange (PSX) in 2026</h3><p>How to open a brokerage account and make your first investment safely.</p></div>
+    <div class="row-meta">⏱ 9 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="05-gold-investment-pakistan.html">
+    <div class="row-icon investing">🏅</div>
+    <div class="row-content"><h3>Should you invest in gold in Pakistan? A complete 2026 guide</h3><p>Physical gold vs digital gold — pros, cons, and how to get started.</p></div>
+    <div class="row-meta">⏱ 6 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="06-property-investment-pakistan-2026.html">
+    <div class="row-icon investing">🏠</div>
+    <div class="row-content"><h3>Is buying property still worth it in Pakistan in 2026?</h3><p>We break down the real numbers — rental yields, capital gains, and risks.</p></div>
+    <div class="row-meta">⏱ 7 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="07-best-mutual-funds-pakistan-2026.html">
+    <div class="row-icon investing">📈</div>
+    <div class="row-content"><h3>Best mutual funds in Pakistan for 2026</h3><p>How to choose a fund without needing to be a finance expert.</p></div>
+    <div class="row-meta">⏱ 7 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+
+  <div class="section-title income">💼 Side Income</div>
+
+  <a class="article-row" href="08-fiverr-freelancing-pakistan.html">
+    <div class="row-icon income">💻</div>
+    <div class="row-content"><h3>How to earn $500/month on Fiverr from Pakistan</h3><p>A realistic, step-by-step strategy for landing your first clients.</p></div>
+    <div class="row-meta">⏱ 8 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="09-dropshipping-pakistan-guide.html">
+    <div class="row-icon income">📦</div>
+    <div class="row-content"><h3>Is dropshipping still profitable in Pakistan in 2026?</h3><p>An honest look at the opportunities and real challenges.</p></div>
+    <div class="row-meta">⏱ 7 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="10-remote-jobs-pakistan.html">
+    <div class="row-icon income">🌍</div>
+    <div class="row-content"><h3>How to find legitimate remote jobs from Pakistan</h3><p>Where to look, red flags to avoid, and how to compete globally.</p></div>
+    <div class="row-meta">⏱ 6 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+
+  <div class="section-title banking">🏦 Banking & Apps</div>
+
+  <a class="article-row" href="11-sadapay-vs-easypaisa-vs-jazzcash.html">
+    <div class="row-icon banking">📱</div>
+    <div class="row-content"><h3>SadaPay vs EasyPaisa vs JazzCash — which one should you use?</h3><p>A 2026 comparison of Pakistan's top digital wallets and their fees.</p></div>
+    <div class="row-meta">⏱ 6 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+  <a class="article-row" href="12-best-savings-accounts-pakistan.html">
+    <div class="row-icon banking">🏦</div>
+    <div class="row-content"><h3>Best savings accounts in Pakistan in 2026</h3><p>Comparing profit rates and features across major banks.</p></div>
+    <div class="row-meta">⏱ 6 min</div>
+    <div class="row-arrow">→</div>
+  </a>
+
+</div>
+
+<footer>
+  <p>© 2026 SmartMoney PK · <a href="index.html">Home</a> · This is educational content, not financial advice.</p>
+</footer>
+
+</body>
+</html>
